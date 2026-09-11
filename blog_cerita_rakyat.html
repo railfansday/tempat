@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Contoh Cerita Rakyat Indonesia yang Populer & Sarat Pesan Moral | EduNusa Blog</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        },
+                        accent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+        .dark .gradient-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e1b4b 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-slate-800 shadow-sm border-b border-gray-100 dark:border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md shadow-brand-500/30">
+                        E
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">EduNusa<span class="text-brand-600">.blog</span></span>
+                        <span class="hidden sm:inline-block text-xs bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 px-2 py-0.5 rounded-full font-semibold ml-2">Edukasi Budaya</span>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-md mx-8">
+                    <div class="relative w-full">
+                        <input type="text" id="searchInput" onkeyup="filterArticles()" placeholder="Cari cerita rakyat, tokoh, atau provinsi..." 
+                            class="w-full bg-gray-100 dark:bg-slate-700 text-gray-800 dark:text-gray-100 text-sm rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all border border-transparent dark:border-slate-600">
+                        <i class="fas fa-search absolute left-3.5 top-2.5 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="flex items-center space-x-3">
+                    <!-- Bookmark Count Indicator -->
+                    <button onclick="toggleSavedModal()" class="relative p-2 text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 transition">
+                        <i class="far fa-bookmark text-lg"></i>
+                        <span id="bookmarkBadge" class="hidden absolute -top-1 -right-1 bg-brand-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+                    </button>
+
+                    <!-- Dark Mode Toggle -->
+                    <button id="themeToggle" class="p-2 text-gray-600 dark:text-gray-300 hover:text-amber-500 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 transition">
+                        <i class="fas fa-moon text-lg dark:hidden"></i>
+                        <i class="fas fa-sun text-lg hidden dark:block text-amber-400"></i>
+                    </button>
+
+                    <a href="#komentar" class="hidden sm:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-brand-600 hover:bg-brand-700 shadow-sm transition">
+                        <i class="far fa-comment-dots mr-2"></i> Diskusi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="gradient-banner text-white py-12 md:py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-2 text-xs md:text-sm font-medium text-brand-100 mb-3">
+                <a href="#" class="hover:underline">Beranda</a>
+                <span>&rsaquo;</span>
+                <a href="#" class="hover:underline">Sastra & Budaya</a>
+                <span>&rsaquo;</span>
+                <span>Cerita Rakyat</span>
+            </div>
+            
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight tracking-tight mb-4">
+                10 Contoh Cerita Rakyat Indonesia yang Populer & Sarat Pesan Moral Kehidupan
+            </h1>
+
+            <!-- Meta info -->
+            <div class="flex flex-wrap items-center gap-4 text-xs md:text-sm text-blue-100 pt-2 border-t border-white/10">
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/100x100/16a34a/ffffff?text=ED" alt="Penulis" class="w-8 h-8 rounded-full border border-white/30">
+                    <span class="font-medium">Tim Redaksi EduNusa</span>
+                </div>
+                <span>&bull;</span>
+                <div class="flex items-center space-x-1">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>11 September 2026</span>
+                </div>
+                <span>&bull;</span>
+                <div class="flex items-center space-x-1">
+                    <i class="far fa-clock"></i>
+                    <span>8 Menit Baca</span>
+                </div>
+                <span>&bull;</span>
+                <div class="flex items-center space-x-1">
+                    <i class="far fa-eye"></i>
+                    <span>14.2k Dilihat</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Main Article Column (Left / 8 cols) -->
+            <article class="lg:col-span-8 bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 dark:border-slate-700">
+                
+                <!-- Category Filter Pills -->
+                <div class="flex flex-wrap items-center gap-2 mb-8 pb-4 border-b border-gray-100 dark:border-slate-700">
+                    <span class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mr-2">Filter Kategori:</span>
+                    <button onclick="filterCategory('all')" class="cat-btn active border px-3 py-1 rounded-full text-xs font-semibold bg-brand-600 text-white border-brand-600 transition">Semua</button>
+                    <button onclick="filterCategory('Legenda')" class="cat-btn border px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 border-transparent hover:bg-gray-200 dark:hover:bg-slate-600 transition">Legenda</button>
+                    <button onclick="filterCategory('Fabel')" class="cat-btn border px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 border-transparent hover:bg-gray-200 dark:hover:bg-slate-600 transition">Fabel / Dongeng</button>
+                    <button onclick="filterCategory('Mitos')" class="cat-btn border px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 border-transparent hover:bg-gray-200 dark:hover:bg-slate-600 transition">Mitos & Folklore</button>
+                </div>
+
+                <!-- Introduction Section -->
+                <div class="prose dark:prose-invert max-w-none mb-8">
+                    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <strong class="text-brand-600 dark:text-brand-400 font-semibold">Cerita rakyat Indonesia</strong> merupakan warisan budaya lisan yang diturunkan dari generasi ke generasi. Selain sebagai sarana hiburan, dongeng dan legenda Nusantara ini kaya akan ajaran etika, penghormatan kepada orang tua, hingga asal-usul terbentuknya suatu tempat di tanah air.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                        Memahami kisah-kisah tradisional tidak hanya memperkaya wawasan sastra anak dan generasi muda, tetapi juga menanamkan nilai-nilai karakter luhur. Berikut telah kami rangkum daftar dongeng & cerita rakyat populer Indonesia beserta pesan moralnya!
+                    </p>
+                </div>
+
+                <!-- Interactive Table of Contents (Daftar Isi) -->
+                <div class="bg-blue-50 dark:bg-slate-700/50 rounded-xl p-5 mb-10 border border-blue-100 dark:border-slate-600">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleTOC()">
+                        <h3 class="font-bold text-gray-900 dark:text-white flex items-center text-base">
+                            <i class="fas fa-list-ol text-brand-600 dark:text-brand-400 mr-2.5"></i> Daftar Isi Artikel
+                        </h3>
+                        <i id="tocIcon" class="fas fa-chevron-up text-gray-500 transition-transform duration-200"></i>
+                    </div>
+                    <ul id="tocList" class="mt-4 space-y-2 text-sm text-brand-700 dark:text-brand-300 pl-2">
+                        <!-- Populated via JS -->
+                    </ul>
+                </div>
+
+                <!-- Stories Container -->
+                <div id="storiesContainer" class="space-y-12">
+                    
+                    <!-- Story 1: Malin Kundang -->
+                    <div class="story-card bg-gray-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 transition" data-category="Legenda" data-title="Malin Kundang">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 text-xs font-bold px-3 py-1 rounded-full">Legenda / Asal-Usul</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Sumatera Barat</span>
+                                <button onclick="toggleSaveStory('Malin Kundang')" class="save-btn text-gray-400 hover:text-brand-600 p-1" title="Simpan Cerita">
+                                    <i class="far fa-bookmark text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Visual Header (SVG Art) -->
+                        <div class="w-full h-48 bg-gradient-to-r from-blue-600 to-cyan-700 rounded-xl mb-6 flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                            <svg class="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <path d="M0,50 Q25,30 50,50 T100,50 L100,100 L0,100 Z" fill="white"></path>
+                            </svg>
+                            <div class="text-center z-10 px-4">
+                                <i class="fas fa-ship text-4xl mb-2 text-cyan-200"></i>
+                                <h3 id="story-malin-kundang" class="text-2xl font-black tracking-wide">Legenda Malin Kundang</h3>
+                                <p class="text-xs text-cyan-100">Kisah Anak Durhaka yang Menjadi Batu</p>
+                            </div>
+                        </div>
+
+                        <!-- Main Story Info -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 text-xs bg-white dark:bg-slate-800 p-3 rounded-lg border border-gray-100 dark:border-slate-700">
+                            <div><strong>Tokoh Utama:</strong> Malin Kundang, Mande Rubayah (Ibu)</div>
+                            <div><strong>Setting:</strong> Pantai Air Manis, Padang</div>
+                            <div><strong>Status:</strong> Legenda Sangat Populer</div>
+                        </div>
+
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Ringkasan Alur Cerita:</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Malin Kundang adalah seorang pemuda miskin dari pesisir Sumatera Barat yang merantau demi memperbaiki nasib ibunya. Setelah bertahun-tahun berlayar, ia berhasil menjadi saudagar kaya raya dan menikahi wanita bangsawan. Ketika kapal megahnya berlabuh kembali di desa kelahirannya, sang ibu bergegas menyambutnya dengan penuh kerinduan. Namun karena malu akan penampilan ibunya yang renta dan lusuh, Malin menolak mengakui wanita tersebut sebagai ibunya bahkan menendangnya. Sakit hati mendalam membuat sang ibu berdoa, hingga petir menyambar dan mengubah Malin beserta kapalnya menjadi batu.
+                        </p>
+
+                        <!-- Highlight Moral Value -->
+                        <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                            <h5 class="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-1 flex items-center">
+                                <i class="fas fa-heart text-amber-500 mr-2"></i> Pesan Moral & Nilai Kehidupan
+                            </h5>
+                            <p class="text-sm text-amber-900 dark:text-amber-200 font-medium">
+                                Selalu berbakti dan hormati kedua orang tua dalam kondisi apa pun. Keberhasilan finansial tidak ada artinya jika kita melupakan jasa orang tua yang membesarkan kita.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Story 2: Sangkuriang -->
+                    <div class="story-card bg-gray-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 transition" data-category="Legenda" data-title="Sangkuriang">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 text-xs font-bold px-3 py-1 rounded-full">Legenda / Mitos</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Jawa Barat</span>
+                                <button onclick="toggleSaveStory('Sangkuriang')" class="save-btn text-gray-400 hover:text-brand-600 p-1" title="Simpan Cerita">
+                                    <i class="far fa-bookmark text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-48 bg-gradient-to-r from-emerald-600 to-teal-800 rounded-xl mb-6 flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                            <div class="text-center z-10 px-4">
+                                <i class="fas fa-mountain text-4xl mb-2 text-emerald-200"></i>
+                                <h3 id="story-sangkuriang" class="text-2xl font-black tracking-wide">Legenda Sangkuriang</h3>
+                                <p class="text-xs text-emerald-100">Asal-usul Gunung Tangkuban Perahu</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 text-xs bg-white dark:bg-slate-800 p-3 rounded-lg border border-gray-100 dark:border-slate-700">
+                            <div><strong>Tokoh Utama:</strong> Sangkuriang, Dayang Sumbi, Tumang</div>
+                            <div><strong>Setting:</strong> Priangan, Jawa Barat</div>
+                            <div><strong>Status:</strong> Mitos & Legenda Tempat</div>
+                        </div>
+
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Ringkasan Alur Cerita:</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Sangkuriang secara tidak sengaja membunuh anjing kesayangannya yang ternyata penjelmaan ayahnya (Si Tumang). Karena marah, ibunya Dayang Sumbi memukul kepala Sangkuriang hingga membekas dan mengusirnya. Bertahun-tahun kemudian, Sangkuriang tumbuh dewasa dan jatuh cinta pada wanita cantik yang tak lain adalah Dayang Sumbi (yang awet muda). Mengetahui bekas luka di kepala Sangkuriang, Dayang Sumbi menyadari itu anaknya dan memberi syarat tak mungkin: membendung sungai Citarum serta membuat perahu raksasa dalam semalam. Saat Sangkuriang hampir selesai dibantu jin, Dayang Sumbi membuat fajar buatan. Murka karena digagalkan, Sangkuriang menendang perahu tersebut hingga telungkup menjadi Gunung Tangkuban Perahu.
+                        </p>
+
+                        <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                            <h5 class="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-1 flex items-center">
+                                <i class="fas fa-heart text-amber-500 mr-2"></i> Pesan Moral & Nilai Kehidupan
+                            </h5>
+                            <p class="text-sm text-amber-900 dark:text-amber-200 font-medium">
+                                Hindari mengumbar amarah tanpa mengendalikan emosi, serta bersikap jujur dan tidak memaksakan kehendak yang melanggar norma kebenaran.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Story 3: Timun Mas -->
+                    <div class="story-card bg-gray-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 transition" data-category="Fabel" data-title="Timun Mas">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 text-xs font-bold px-3 py-1 rounded-full">Dongeng / Keberanian</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Jawa Tengah</span>
+                                <button onclick="toggleSaveStory('Timun Mas')" class="save-btn text-gray-400 hover:text-brand-600 p-1" title="Simpan Cerita">
+                                    <i class="far fa-bookmark text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-48 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl mb-6 flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                            <div class="text-center z-10 px-4">
+                                <i class="fas fa-magic text-4xl mb-2 text-yellow-200"></i>
+                                <h3 id="story-timun-mas" class="text-2xl font-black tracking-wide">Timun Mas & Raksasa</h3>
+                                <p class="text-xs text-amber-100">Kisah Keberanian Menghadapi Raksasa Buto Ijo</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 text-xs bg-white dark:bg-slate-800 p-3 rounded-lg border border-gray-100 dark:border-slate-700">
+                            <div><strong>Tokoh Utama:</strong> Timun Mas, Mbok Srini, Buto Ijo</div>
+                            <div><strong>Setting:</strong> Pedesaan Jawa Tengah</div>
+                            <div><strong>Status:</strong> Dongeng Anak Nusantara</div>
+                        </div>
+
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Ringkasan Alur Cerita:</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Mbok Srini yang mendambakan anak diberi biji timun oleh Raksasa Buto Ijo. Dari timun emas raksasa lahirlah bayi perempuan cantik bernama Timun Mas. Namun, Buto Ijo menagih janji untuk memakan Timun Mas saat usianya 17 tahun. Sebelum melarikan diri, Mbok Srini memberikan 4 kantong ajaib berisi biji mentimun, jarum, garam, dan terasi. Saat dikejar Buto Ijo, Timun Mas melemparkan bungkusan tersebut secara bertahap yang berubah menjadi ladang timun, hutan bambu lebat, lautan luas, dan lautan lumpur mendidih yang akhirnya menenggelamkan sang raksasa.
+                        </p>
+
+                        <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                            <h5 class="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-1 flex items-center">
+                                <i class="fas fa-heart text-amber-500 mr-2"></i> Pesan Moral & Nilai Kehidupan
+                            </h5>
+                            <p class="text-sm text-amber-900 dark:text-amber-200 font-medium">
+                                Jangan pernah menyerah dalam menghadapi kesulitan. Keberanian, kecerdikan, dan usaha gigih selalu punya jalan untuk mengalahkan kejahatan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Story 4: Danau Toba -->
+                    <div class="story-card bg-gray-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 transition" data-category="Legenda" data-title="Danau Toba">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 text-xs font-bold px-3 py-1 rounded-full">Legenda Asal-Usul</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Sumatera Utara</span>
+                                <button onclick="toggleSaveStory('Danau Toba')" class="save-btn text-gray-400 hover:text-brand-600 p-1" title="Simpan Cerita">
+                                    <i class="far fa-bookmark text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-48 bg-gradient-to-r from-blue-700 to-indigo-900 rounded-xl mb-6 flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                            <div class="text-center z-10 px-4">
+                                <i class="fas fa-water text-4xl mb-2 text-blue-300"></i>
+                                <h3 id="story-danau-toba" class="text-2xl font-black tracking-wide">Legenda Danau Toba</h3>
+                                <p class="text-xs text-blue-200">Asal-Usul Danau Toba & Pulau Samosir</p>
+                            </div>
+                        </div>
+
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Ringkasan Alur Cerita:</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Toba, seorang petani muda, menangkap ikan mas ajaib yang bisa menjelma menjadi wanita sangat cantik. Toba menikahinya dengan syarat mutlak: ia tidak boleh mengungkapkan asal-usul istrinya yang berasal dari ikan. Mereka dikaruniai anak bernama Samosir. Suatu hari, Samosir diminta mengantar makanan untuk ayahnya di ladang tetapi malah menghabiskannya. Toba yang emosi berteriak menyumpahinya sebagai "anak ikan". Sumpah terlanggar, langit menjadi gelap, mata air menyembur dahsyat hingga menenggelamkan desa menjadi Danau Toba, dan pulau di tengahnya dinamai Pulau Samosir.
+                        </p>
+
+                        <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                            <h5 class="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-1 flex items-center">
+                                <i class="fas fa-heart text-amber-500 mr-2"></i> Pesan Moral & Nilai Kehidupan
+                            </h5>
+                            <p class="text-sm text-amber-900 dark:text-amber-200 font-medium">
+                                Pentingnya menjaga janji dan mengendalikan lisan saat emosi. Kata-kata yang diucapkan saat marah dapat berdampak buruk bagi orang yang kita cintai.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Story 5: Roro Jonggrang -->
+                    <div class="story-card bg-gray-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 transition" data-category="Mitos" data-title="Roro Jonggrang">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="bg-rose-100 dark:bg-rose-900/40 text-rose-800 dark:text-rose-300 text-xs font-bold px-3 py-1 rounded-full">Mitos Sejarah</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> DI Yogyakarta</span>
+                                <button onclick="toggleSaveStory('Roro Jonggrang')" class="save-btn text-gray-400 hover:text-brand-600 p-1" title="Simpan Cerita">
+                                    <i class="far fa-bookmark text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-48 bg-gradient-to-r from-slate-700 to-rose-900 rounded-xl mb-6 flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                            <div class="text-center z-10 px-4">
+                                <i class="fas fa-archway text-4xl mb-2 text-rose-200"></i>
+                                <h3 id="story-roro-jonggrang" class="text-2xl font-black tracking-wide">Kisah Roro Jonggrang</h3>
+                                <p class="text-xs text-rose-200">Kisah Candi Prambanan & Seribu Candi</p>
+                            </div>
+                        </div>
+
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Ringkasan Alur Cerita:</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Bandung Bondowoso yang sakti mengalahkan Kerajaan Pengging dan berniat menikahi putri cantik Roro Jonggrang. Tidak menyukai penindas ayahnya, Roro Jonggrang memberi syarat mustahil: membangun 1.000 candi dalam satu malam. Bandung mengarahkan bangsa jin dan berhasil menyelesaikan 999 candi menjelang subuh. Roro Jonggrang panik dan memerintahkan dayang menumbuk padi serta membakar jerami agar ayam jantan berkokok tanda pagi telah tiba. Jin-jin lari ketakutan. Sadar dirinya dicurangi, Bandung Bondowoso mengutuk Roro Jonggrang menjadi arca batu ke-1000 melengkapi Candi Prambanan.
+                        </p>
+
+                        <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                            <h5 class="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-1 flex items-center">
+                                <i class="fas fa-heart text-amber-500 mr-2"></i> Pesan Moral & Nilai Kehidupan
+                            </h5>
+                            <p class="text-sm text-amber-900 dark:text-amber-200 font-medium">
+                                Kejujuran adalah hal paling utama. Kecurangan dan pemaksaan kehendak hanya akan berujung pada kerugian serta penyesalan bagi kedua belah pihak.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Story 6: Keong Mas -->
+                    <div class="story-card bg-gray-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 transition" data-category="Fabel" data-title="Keong Mas">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 text-xs font-bold px-3 py-1 rounded-full">Dongeng Kebaikan</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> Jawa Timur</span>
+                                <button onclick="toggleSaveStory('Keong Mas')" class="save-btn text-gray-400 hover:text-brand-600 p-1" title="Simpan Cerita">
+                                    <i class="far fa-bookmark text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-48 bg-gradient-to-r from-yellow-500 to-amber-700 rounded-xl mb-6 flex items-center justify-center text-white relative overflow-hidden shadow-inner">
+                            <div class="text-center z-10 px-4">
+                                <i class="fas fa-crown text-4xl mb-2 text-yellow-100"></i>
+                                <h3 id="story-keong-mas" class="text-2xl font-black tracking-wide">Kisah Keong Mas</h3>
+                                <p class="text-xs text-yellow-100">Putri Candra Kirana & Ketulusan Hati</p>
+                            </div>
+                        </div>
+
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Ringkasan Alur Cerita:</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Putri Candra Kirana dikutuk penyihir jahat atas perintah saudaranya yang iri, Dewi Galuh, menjadi seekor Keong Mas dan dibuang ke sungai. Keong Mas ditemukan oleh seorang nenek baik hati. Setiap nenek pergi bekerja, Keong Mas berubah menjadi putri cantik dan menyiapkan makanan lezat di rumah nenek. Rahasia terbongkar saat sang nenek pura-pura pergi. Akhirnya Raden Inu Kertapati yang setia mencari tunangannya berhasil menemukan Candra Kirana, dan sihir tersebut sirna selamanya.
+                        </p>
+
+                        <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                            <h5 class="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider mb-1 flex items-center">
+                                <i class="fas fa-heart text-amber-500 mr-2"></i> Pesan Moral & Nilai Kehidupan
+                            </h5>
+                            <p class="text-sm text-amber-900 dark:text-amber-200 font-medium">
+                                Rasa iri dengki hanya mendatangkan keburukan, sementara kesabaran dan kebaikan hati pada akhirnya akan membuahkan kebahagiaan sejati.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Comments Section -->
+                <section id="komentar" class="mt-14 pt-8 border-t border-gray-200 dark:border-slate-700">
+                    <h3 class="text-xl font-extrabold text-gray-900 dark:text-white mb-6 flex items-center">
+                        <i class="far fa-comments text-brand-600 mr-2.5"></i> Diskusi & Komentar Pembaca
+                    </h3>
+
+                    <!-- Add Comment Form -->
+                    <form onsubmit="addComment(event)" class="mb-8 space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" id="commentName" required placeholder="Nama Lengkap Anda" class="w-full bg-gray-50 dark:bg-slate-700 text-sm px-4 py-2.5 rounded-lg border border-gray-200 dark:border-slate-600 focus:ring-2 focus:ring-brand-500 outline-none">
+                            <input type="email" id="commentEmail" required placeholder="Alamat Email (tidak akan dipublikasikan)" class="w-full bg-gray-50 dark:bg-slate-700 text-sm px-4 py-2.5 rounded-lg border border-gray-200 dark:border-slate-600 focus:ring-2 focus:ring-brand-500 outline-none">
+                        </div>
+                        <textarea id="commentBody" rows="3" required placeholder="Tulis tanggapan atau kesan Anda tentang cerita rakyat di atas..." class="w-full bg-gray-50 dark:bg-slate-700 text-sm px-4 py-2.5 rounded-lg border border-gray-200 dark:border-slate-600 focus:ring-2 focus:ring-brand-500 outline-none"></textarea>
+                        <button type="submit" class="bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-6 py-2.5 rounded-lg shadow-sm transition">Kirim Komentar</button>
+                    </form>
+
+                    <!-- Existing Comments List -->
+                    <div id="commentsList" class="space-y-4">
+                        <div class="bg-gray-50 dark:bg-slate-900/40 p-4 rounded-xl border border-gray-100 dark:border-slate-700">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-sm text-gray-900 dark:text-white">Budi Santoso</span>
+                                <span class="text-xs text-gray-400">10 Sep 2026</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300">Rangkuman cerita rakyatnya sangat jelas dan lengkap. Sangat membantu anak saya untuk tugas sekolah materi Bahasa Indonesia!</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-slate-900/40 p-4 rounded-xl border border-gray-100 dark:border-slate-700">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-sm text-gray-900 dark:text-white">Siti Nurhaliza</span>
+                                <span class="text-xs text-gray-400">9 Sep 2026</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300">Pesan moral di tiap cerita disajikan secara highlight yang bagus banget. Jadi gampang dipahami nilai positifnya.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Sidebar Area (Right / 4 cols) -->
+            <aside class="lg:col-span-4 space-y-6">
+                
+                <!-- Author Card -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-700">
+                    <div class="text-center">
+                        <img src="https://placehold.co/120x120/16a34a/ffffff?text=EduNusa" alt="Avatar Redaksi" class="w-20 h-20 rounded-full mx-auto mb-3 shadow-md border-2 border-brand-500">
+                        <h4 class="font-extrabold text-gray-900 dark:text-white text-base">Redaksi EduNusa Blog</h4>
+                        <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold mb-3">Tim Pengembang Konten Edukasi</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                            Berkomitmen menghadirkan artikel pendidikan, literasi budaya, dan wawasan nusantara terpercaya untuk pelajar Indonesia.
+                        </p>
+                        <button class="w-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-200 text-xs font-bold py-2 rounded-lg hover:bg-gray-200 transition">Ikuti EduNusa</button>
+                    </div>
+                </div>
+
+                <!-- Quick Quiz / Widget -->
+                <div class="bg-gradient-to-br from-brand-600 to-teal-700 text-white rounded-2xl p-6 shadow-md">
+                    <span class="bg-white/20 text-xs font-bold px-2.5 py-1 rounded-full uppercase">Kuis Kilat</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2">Uji Pemahamanmu!</h4>
+                    <p class="text-xs text-brand-100 mb-4">Dari provinsi manakah asal cerita rakyat legenda Danau Toba?</p>
+                    <div class="space-y-2 text-xs">
+                        <button onclick="checkQuiz(false)" class="w-full text-left bg-white/10 hover:bg-white/20 p-2.5 rounded-lg border border-white/20 transition">A. Sumatera Barat</button>
+                        <button onclick="checkQuiz(true)" class="w-full text-left bg-white/10 hover:bg-white/20 p-2.5 rounded-lg border border-white/20 transition">B. Sumatera Utara</button>
+                        <button onclick="checkQuiz(false)" class="w-full text-left bg-white/10 hover:bg-white/20 p-2.5 rounded-lg border border-white/20 transition">C. Riau</button>
+                    </div>
+                </div>
+
+                <!-- Related Articles (Artikel Terkait) -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-700">
+                    <h4 class="font-extrabold text-gray-900 dark:text-white text-sm mb-4 pb-2 border-b border-gray-100 dark:border-slate-700 flex items-center">
+                        <i class="fas fa-newspaper text-brand-600 mr-2"></i> Artikel Terkait Lainnya
+                    </h4>
+                    <div class="space-y-4">
+                        <a href="#" class="group flex space-x-3 items-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-lg flex-shrink-0 flex items-center justify-center text-blue-600 font-bold text-xs">SEJARAH</div>
+                            <div>
+                                <h5 class="text-xs font-bold text-gray-800 dark:text-gray-200 group-hover:text-brand-600 transition line-clamp-2">Mengenal Kerajaan Majapahit dan Peninggalan Bersejarahnya</h5>
+                                <span class="text-[10px] text-gray-400">5 Menit Baca</span>
+                            </div>
+                        </a>
+                        <a href="#" class="group flex space-x-3 items-center">
+                            <div class="w-16 h-16 bg-amber-100 rounded-lg flex-shrink-0 flex items-center justify-center text-amber-600 font-bold text-xs">PUISI</div>
+                            <div>
+                                <h5 class="text-xs font-bold text-gray-800 dark:text-gray-200 group-hover:text-brand-600 transition line-clamp-2">Kumpulan Puisi Edukatif Tema Kemerdekaan & Nusantara</h5>
+                                <span class="text-[10px] text-gray-400">4 Menit Baca</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- Saved Stories Modal -->
+    <div id="savedModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 w-full max-w-md rounded-2xl p-6 shadow-2xl border border-gray-100 dark:border-slate-700">
+            <div class="flex items-center justify-between mb-4 pb-2 border-b border-gray-100 dark:border-slate-700">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white flex items-center">
+                    <i class="fas fa-bookmark text-brand-600 mr-2"></i> Cerita Tersimpan
+                </h3>
+                <button onclick="toggleSavedModal()" class="text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
+            </div>
+            <div id="savedList" class="space-y-2 max-h-60 overflow-y-auto text-sm">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-500 dark:text-gray-400 space-y-3">
+            <p>&copy; 2026 EduNusa Blog. Terinspirasi oleh platform edukasi modern Indonesia.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:underline">Kebijakan Privasi</a>
+                <span>&bull;</span>
+                <a href="#" class="hover:underline">Syarat & Ketentuan</a>
+                <span>&bull;</span>
+                <a href="#" class="hover:underline">Kontak Redaksi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // State variables
+        let savedStories = [];
+
+        // Dark Mode Logic
+        const themeToggleBtn = document.getElementById('themeToggle');
+        themeToggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+
+        // Initialize Table of Contents dynamically
+        function initTOC() {
+            const tocList = document.getElementById('tocList');
+            const storyCards = document.querySelectorAll('.story-card');
+            tocList.innerHTML = '';
+
+            storyCards.forEach((card, index) => {
+                const title = card.getAttribute('data-title');
+                const targetId = `story-${title.stripSpaces()}`;
+                
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="#${targetId}" class="hover:underline flex items-center"><span class="w-5 font-bold">${index + 1}.</span> ${title}</a>`;
+                tocList.appendChild(li);
+            });
+        }
+
+        String.prototype.stripSpaces = function() {
+            return this.toLowerCase().replace(/\s+/g, '-');
+        };
+
+        function toggleTOC() {
+            const list = document.getElementById('tocList');
+            const icon = document.getElementById('tocIcon');
+            list.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Search Filter
+        function filterArticles() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const storyCards = document.querySelectorAll('.story-card');
+
+            storyCards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Category Filter
+        function filterCategory(cat) {
+            const btns = document.querySelectorAll('.cat-btn');
+            btns.forEach(b => {
+                b.classList.remove('bg-brand-600', 'text-white');
+                b.classList.add('bg-gray-100', 'dark:bg-slate-700', 'text-gray-700', 'dark:text-gray-300');
+            });
+            event.target.classList.remove('bg-gray-100', 'dark:bg-slate-700', 'text-gray-700', 'dark:text-gray-300');
+            event.target.classList.add('bg-brand-600', 'text-white');
+
+            const storyCards = document.querySelectorAll('.story-card');
+            storyCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (cat === 'all' || category === cat) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Save / Bookmark Story Logic
+        function toggleSaveStory(title) {
+            const idx = savedStories.indexOf(title);
+            if (idx > -1) {
+                savedStories.splice(idx, 1);
+            } else {
+                savedStories.push(title);
+            }
+            updateSavedUI();
+        }
+
+        function updateSavedUI() {
+            const badge = document.getElementById('bookmarkBadge');
+            if (savedStories.length > 0) {
+                badge.textContent = savedStories.length;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            const list = document.getElementById('savedList');
+            if (savedStories.length === 0) {
+                list.innerHTML = '<p class="text-gray-400 text-center py-4">Belum ada cerita yang disimpan.</p>';
+            } else {
+                list.innerHTML = savedStories.map(s => `
+                    <div class="flex items-center justify-between p-2 bg-gray-50 dark:bg-slate-700/50 rounded-lg">
+                        <span class="font-medium text-gray-800 dark:text-gray-200">${s}</span>
+                        <button onclick="toggleSaveStory('${s}')" class="text-red-500 hover:text-red-700 text-xs font-bold">Hapus</button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function toggleSavedModal() {
+            const modal = document.getElementById('savedModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Interactive Comment Submission
+        function addComment(e) {
+            e.preventDefault();
+            const name = document.getElementById('commentName').value;
+            const body = document.getElementById('commentBody').value;
+            const list = document.getElementById('commentsList');
+
+            const newComment = document.createElement('div');
+            newComment.className = 'bg-gray-50 dark:bg-slate-900/40 p-4 rounded-xl border border-gray-100 dark:border-slate-700 animate-fade-in';
+            newComment.innerHTML = `
+                <div class="flex items-center justify-between mb-2">
+                    <span class="font-bold text-sm text-gray-900 dark:text-white">${name}</span>
+                    <span class="text-xs text-gray-400">Baru Saja</span>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300">${body}</p>
+            `;
+
+            list.prepend(newComment);
+            e.target.reset();
+        }
+
+        // Quiz Widget Interactivity
+        function checkQuiz(isCorrect) {
+            if (isCorrect) {
+                alert('Benar sekali! Legenda Danau Toba berasal dari Sumatera Utara.');
+            } else {
+                alert('Jawaban kurang tepat. Coba baca kembali artikel cerita Danau Toba!');
+            }
+        }
+
+        // Run on load
+        window.onload = function() {
+            initTOC();
+            updateSavedUI();
+        };
+    </script>
+</body>
+</html>
